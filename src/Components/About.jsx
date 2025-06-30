@@ -49,7 +49,7 @@ const About = () => {
   return (
     <motion.section
       id="about"
-      className="py-16 px-4 bg-base-200"
+      className="py-16 px-4 bg-base-200 md:pt-30"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 2 }}
