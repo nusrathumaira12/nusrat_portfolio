@@ -39,14 +39,34 @@ const projectList = [
       
     ],
   },
+  {
+    title: "FusionSphere",
+    description: "FusionSphere is a local event discovery platform where users can explore upcoming events, view details, and make bookings. With authentication and secure booking system, FusionSphere makes finding and attending events easy and seamless..",
+    features: [
+        "  🔍 Search Events by Name or Location",
+        " 🔒 JWT-Protected Private Routes",
+        "  🎛️ Toggle Between Card and Table View in Bookings " 
+    ],
+
+    tech: ["React","JWt" ,"Tailwind CSS", "Framer Motion" ,"Firebase","Express", "MongoDB"],
+    liveLink: "https://quiet-kataifi-5abe2a.netlify.app/",
+    githubLink: " https://github.com/nusrathumaira12/event-explorer",
+    images: [
+      "/images/fusion1.png",
+      "/images/fusion2.png",
+      "/images/fusion3.png",
+      
+      
+    ],
+  },
 ];
 
 
 const Projects = () => {
     return (
-        <section className="py-16 px-4 bg-base-100">
+        <section className="py-16 px-4 bg-base-200">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-12">My Projects</h2>
+        <h2 className="text-3xl font-bold text-center mb-15">My Projects</h2>
         {projectList.map((project, index) => (
           <ProjectCard key={index} {...project} />
         ))}

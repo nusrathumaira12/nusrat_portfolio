@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  FaPalette, FaHeart, FaBook, FaCode, FaUserCircle, FaHome, FaUserFriends
+   FaBook, FaCode, FaUserCircle, FaHome, FaUserFriends
 } from 'react-icons/fa';
 import { GoGoal } from 'react-icons/go';
 import { motion } from 'framer-motion';

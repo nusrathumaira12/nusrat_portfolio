@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 const Banner = () => {
     return (
         <div className="hero items-start  bg-base-200 min-h-[650px] pt-20">
-  <div className="hero-content flex-col lg:flex-row-reverse">
+  <div className="hero-content flex-col lg:flex-row-reverse mx-40">
    <motion.div
    initial={{ opacity: 0, x: 100 }}
    animate={{ opacity: 1, x: 0 }}

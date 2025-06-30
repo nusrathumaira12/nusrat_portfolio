@@ -41,14 +41,14 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen px-4 py-12 bg-gray-50 flex flex-col items-center">
-      <h2 className="text-3xl font-bold mb-8">Contact Me</h2>
+      <h2 className="text-3xl font-bold mb-15">Contact Me</h2>
 
       <motion.div
         {...sectionZoom}
         className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-10"
       >
        
-        <div className={`bg-amber-400 text-white p-6 rounded shadow-md ${hoverStyle}`}>
+        <div className={`bg-amber-400 text-white p-10 rounded shadow-md ${hoverStyle}`}>
           <h3 className="text-xl font-semibold mb-4">My Contact Details</h3>
           <p><strong>Full Name:</strong> Nusart Humaira</p>
           <p><strong>Address:</strong> Dhaka, Bangladesh</p>
@@ -84,7 +84,7 @@ const Contact = () => {
         </div>
 
        
-        <div className={`bg-white p-6 rounded shadow-md ${hoverStyle}`}>
+        <div className={`bg-white p-10 rounded shadow-md ${hoverStyle}`}>
           <h3 className="text-xl font-semibold mb-4">Send Me a Message</h3>
           <form ref={form} onSubmit={sendEmail} className="space-y-4">
             <input

@@ -2,11 +2,11 @@ import { FaGraduationCap } from "react-icons/fa";
 
 const Education = () => {
   return (
-    <section id="education" className="py-16 px-4 bg-white">
-      <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-10">Education</h2>
+    <section id="education" className="py-16 px-4 bg-base-200 ">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-3xl font-bold text-center mb-15 mt-12">My Education</h2>
 
-        <div className="bg-gray-100 p-6 rounded-2xl shadow-md flex items-start gap-4">
+        <div className="bg-white p-6 rounded-2xl shadow-md flex items-start gap-4">
           <FaGraduationCap size={200} className="text-4xl text-black mt-1" />
           <div>
             <h3 className="text-xl font-semibold text-gray-800">
