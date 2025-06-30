@@ -59,7 +59,7 @@ const Navbar = () => {
                       download
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="btn btn-outline btn-warning"
+                      className="btn btn-outline  bg-white text-amber-500"
                     >
                        Resume 
                       <FaDownload />

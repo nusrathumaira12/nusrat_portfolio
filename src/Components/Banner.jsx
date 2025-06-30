@@ -56,7 +56,7 @@ const Banner = () => {
     href="/Email Writing Task (1) 2.pdf"
     target="_blank"
     rel="noopener noreferrer"
-    className="btn  text-white btn-warning flex items-center gap-2"
+    className="btn  text-white bg-amber-500 flex items-center gap-2"
   >
      Resume <FaEye />
   </a>
