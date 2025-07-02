@@ -14,7 +14,7 @@ const fadeIn = {
 
 const Home = () => {
   return (
-    <div className="bg-base-200">
+    <div className=" min-h-screen bg-base-200">
       <section id="home">
         <Banner />
       </section>

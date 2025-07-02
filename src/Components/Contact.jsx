@@ -40,12 +40,12 @@ const Contact = () => {
   const hoverStyle = 'hover:shadow-xl hover:-translate-y-5 transition-all duration-500';
 
   return (
-    <div className="min-h-screen px-4 py-12 bg-gray-50 flex flex-col items-center">
-      <h2 className="text-3xl font-bold mb-15">Contact Me</h2>
+    <div className="min-h-screen px-4 mt-12 bg-base-200 flex flex-col items-center">
+      <h2 className="text-3xl font-bold mb-15 mt-10 dark:text-white">Contact Me</h2>
 
       <motion.div
         {...sectionZoom}
-        className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-10"
+        className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-10 pt-5"
       >
        
         <div className={`bg-amber-400 text-white p-10 rounded shadow-md ${hoverStyle}`}>
@@ -84,15 +84,15 @@ const Contact = () => {
         </div>
 
        
-        <div className={`bg-white p-10 rounded shadow-md ${hoverStyle}`}>
-          <h3 className="text-xl font-semibold mb-4">Send Me a Message</h3>
-          <form ref={form} onSubmit={sendEmail} className="space-y-4">
+        <div className={`bg-white p-10 dark:bg-amber-200 rounded shadow-md ${hoverStyle}`}>
+          <h3 className="text-xl font-semibold mb-4 dark:text-black">Send Me a Message</h3>
+          <form ref={form} onSubmit={sendEmail} className="space-y-4 dark:text-black">
             <input
               type="text"
               name="name"
               placeholder="Your Name"
               required
-              className="w-full p-2 border rounded"
+              className="w-full p-2 border rounded dark:text-black"
             />
             <input
               type="email"

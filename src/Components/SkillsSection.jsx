@@ -54,12 +54,12 @@ import { VscVscode } from "react-icons/vsc";
   );
   
   const SkillsSection = () => (
-    <div className="space-y-8  p-6 rounded-lg bg-base-200">
+    <div className="space-y-8  p-6 rounded-lg bg-base-200 mb-12">
         <h2 className="font-bold my-20 text-4xl text-center mx-auto">My Skills</h2>
-      {/* Row 1: left to right */}
+      
       <MarqueeRow items={row1} animation="animate-marquee-right" />
   
-      {/* Row 2: right to left */}
+  
       <MarqueeRow items={row2} animation="animate-marquee-left" />
     </div>
   );

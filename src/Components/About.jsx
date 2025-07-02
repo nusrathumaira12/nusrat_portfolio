@@ -49,7 +49,7 @@ const About = () => {
   return (
     <motion.section
       id="about"
-      className="py-16 px-4 bg-base-200 md:pt-30"
+      className="py-16 px-4 bg-base-200 md:pt-30 "
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 2 }}
@@ -62,7 +62,7 @@ const About = () => {
           {cardData.map((card, index) => (
           <motion.div
           key={index}
-          className="p-6 border border-gray-200 rounded-2xl shadow hover:shadow-lg transition-shadow will-change-transform"
+          className="p-6 border border-gray-200 rounded-2xl shadow hover:shadow-lg transition-shadow will-change-transform "
           variants={cardVariants}
           initial="hidden"
           whileInView="visible"
@@ -71,7 +71,7 @@ const About = () => {
         >
         
               <div className="mb-4">{card.icon}</div>
-              <p className="text-gray-600">{card.description}</p>
+              <p className="text-gray-600 dark:text-white">{card.description}</p>
             </motion.div>
           ))}
         </div>

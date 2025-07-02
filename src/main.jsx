@@ -29,7 +29,7 @@ children: [
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
- <div className='font-poppins'>
+ <div className='font-poppins '>
  <RouterProvider router={router} />
  </div>
   </StrictMode>,

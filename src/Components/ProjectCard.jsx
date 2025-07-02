@@ -39,7 +39,7 @@ const ProjectCard = ({
   return (
     <>
       <div className="flex flex-col-reverse md:flex-row gap-8 items-center mb-12">
-        {/* LEFT: Screenshot Carousel */}
+        
         <div className="w-full md:w-1/2">
           <Swiper
             modules={[Navigation, Autoplay]}
@@ -62,14 +62,14 @@ const ProjectCard = ({
           </Swiper>
         </div>
 
-        {/* RIGHT: Text Content */}
-        <div className="w-full md:w-1/2 pl-2">
-          <h3 className="text-2xl font-bold text-black mb-2">{title}</h3>
-          <p className="text-gray-700 mb-3">{description.slice(0, 100)}...</p>
+       
+        <div className="w-full md:w-1/2 pl-2 dark:text-white">
+          <h3 className="text-2xl font-bold text-black mb-2 dark:text-white">{title}</h3>
+          <p className="text-gray-700 mb-3 dark:text-white">{description.slice(0, 100)}...</p>
 
           <div className="mb-3">
-            <h4 className="text-sm font-semibold text-gray-800">Main Features:</h4>
-            <ul className="list-disc list-inside text-gray-600 text-sm mt-1 space-y-1">
+            <h4 className="text-sm font-semibold text-gray-800 dark:text-white">Main Features:</h4>
+            <ul className="list-disc list-inside text-gray-600 dark:text-white text-sm mt-1 space-y-1">
               {features.slice(0, 2).map((feature, i) => (
                 <li key={i}>{feature}</li>
               ))}
@@ -80,7 +80,7 @@ const ProjectCard = ({
             {tech.map((item, index) => (
               <span
                 key={index}
-                className={`px-3 py-1 text-sm rounded-full border ${
+                className={`px-3 py-1 text-sm dark:text-white rounded-full border ${
                   techColors[item] || "border-gray-300 text-gray-600"
                 }`}
               >
@@ -115,12 +115,12 @@ const ProjectCard = ({
               >
                 <div className="pt-4 space-y-6">
                   <div className="flex justify-between items-center">
-                    <h3 className="text-3xl font-bold">{title}</h3>
+                    <h3 className="text-3xl font-bold dark:text-white">{title}</h3>
                     <button onClick={() => setIsOpen(false)} className="text-red-500 text-2xl font-bold">✖</button>
                   </div>
 
                   <p className="text-gray-700 leading-relaxed">{description}</p>
-                  <p className="text-gray-700 leading-relaxed"><strong>About {title} </strong> <br /> {aboutUs}</p>
+                  <p className="text-gray-700  leading-relaxed"><strong>About {title} </strong> <br /> {aboutUs}</p>
 
                   <div>
                     <h4 className="text-xl font-semibold text-gray-800 mb-2">Main Features</h4>

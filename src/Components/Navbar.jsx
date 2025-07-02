@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <div className="navbar sticky top-0 z-50 bg-base-200 px-2 md:px-20">
       <div className="navbar-start flex items-center">
-        {/* Mobile Dropdown */}
+       
         <div className="dropdown lg:hidden">
           <div tabIndex={0} role="button">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -33,7 +33,7 @@ const Navbar = () => {
         </div>
 
        
-        <img src={logo} alt="Logo" className="w-15 h-30 object-cover" />
+        <img src={logo} alt="Logo" className="w-25 md:w-28 object-cover" />
       </div>
 
       
